@@ -9,7 +9,23 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         Ejercicio1();
         Ejercicio2(7);
+        clases();
+
     }
+
+    private fun clases() {
+        var emplead = Empleado("Jacqueline",
+            800.5,"Programador", "Director de tecnologia", 10)
+        println(emplead)
+        emplead.InformacionSueldo()
+
+        var valoe = Dado(7)
+        println(valoe)
+        valoe.num()
+        valoe.aleatorio()
+
+    }
+
     private fun Ejercicio2(numero:Int) {
 
         for (i in 1..10){
@@ -29,4 +45,5 @@ class MainActivity : AppCompatActivity() {
         val sueldomensual = (sueldodiario * 30);
         println("El nombre del oprario es: $operario y el sueldo de dicho operario es: $$sueldodiario el sueldo mensual es: $$sueldomensual");
     }
+
 }
